@@ -364,4 +364,4 @@ backed up and marker-fenced) and reads your local Claude Code transcripts when y
 
 ## Author
 
-**Kostas Ordoumpozanis** — Founder, [Anodea](https://github.com/anodeaGr).
+**Kostas Ordoumpozanis** — Founder, [Anodea](https://anodea.gr)
