@@ -30,7 +30,7 @@ You do not need a project of any kind. This skill works in any folder.
 Type this command:
 
 ```bash
-npx skills add anodeaGr/speaksimple
+npx skills add anodeaGr/speaksimple-skill
 ```
 
 The tool asks two questions:
@@ -51,7 +51,7 @@ uninstall the skill and install it again.
 On Windows, the tool can show a symlink error. If this occurs, add `--copy`:
 
 ```bash
-npx skills add anodeaGr/speaksimple --copy
+npx skills add anodeaGr/speaksimple-skill --copy
 ```
 
 ---
@@ -141,7 +141,7 @@ means the style works.
 
 | Message or problem | Cause | What to do |
 |---|---|---|
-| `REFUSING: this copy of the skill is not installed` | The folder is not a skills folder. | Install it with `npx skills add anodeaGr/speaksimple`. |
+| `REFUSING: this copy of the skill is not installed` | The folder is not a skills folder. | Install it with `npx skills add anodeaGr/speaksimple-skill`. |
 | `--gate` prints `FAIL` | Same cause. | Same action. The output holds the command. |
 | `Cannot find module 'C:\...\~\.agents\...'` | You used `~` on Windows. | Use `$env:USERPROFILE` or `%USERPROFILE%`. |
 | `"ready": false`, but the style file exists | The hook is not in `settings.json`. | Run `--install` again. |

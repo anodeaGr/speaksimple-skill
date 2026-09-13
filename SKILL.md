@@ -1,6 +1,6 @@
 ---
 name: speaksimple
-description: Learn how a specific human wants Claude to write, save it as a UserCommunicationProfile.md, and enforce it with a CLAUDE.md block plus a SessionStart hook so it survives /clear and /compact. Use this skill whenever the user asks Claude to change how it explains things, says answers are too long, too technical, too detailed or hard to follow, asks for simpler or shorter or plain-language replies, wants Claude to remember their communication preferences, mentions a communication or writing profile, mentions plain language standards (ISO 24495-1, ASD-STE100, Easy Read, Information Mapping, DITA, Mayer), asks to set up or repair the style hook, or wants to review past sessions to check whether the current style is actually working. Accepts --install to set itself up after "npx skills add anodeaGr/speaksimple": it checks where it is installed, runs the interview if there is no style yet, and wires the SessionStart hook. Also use it for "speaksimple", "/speaksimple", "learn how I talk", "re-align my style", or any request to make Claude's answers easier for this particular person to read.
+description: Learn how a specific human wants Claude to write, save it as a UserCommunicationProfile.md, and enforce it with a CLAUDE.md block plus a SessionStart hook so it survives /clear and /compact. Use this skill whenever the user asks Claude to change how it explains things, says answers are too long, too technical, too detailed or hard to follow, asks for simpler or shorter or plain-language replies, wants Claude to remember their communication preferences, mentions a communication or writing profile, mentions plain language standards (ISO 24495-1, ASD-STE100, Easy Read, Information Mapping, DITA, Mayer), asks to set up or repair the style hook, or wants to review past sessions to check whether the current style is actually working. Accepts --install to set itself up after "npx skills add anodeaGr/speaksimple-skill": it checks where it is installed, runs the interview if there is no style yet, and wires the SessionStart hook. Also use it for "speaksimple", "/speaksimple", "learn how I talk", "re-align my style", or any request to make Claude's answers easier for this particular person to read.
 ---
 
 # SpeakSimple
@@ -58,7 +58,7 @@ interaction turns into a lecture.
 ## `--install` mode
 
 Trigger: the user message has `--install`. Also use this mode when the user asks
-to install this skill, or to set it up after `npx skills add anodeaGr/speaksimple`.
+to install this skill, or to set it up after `npx skills add anodeaGr/speaksimple-skill`.
 
 **Run the four commands below, in order. Run nothing else.**
 

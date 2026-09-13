@@ -55,7 +55,7 @@ The style file lives inside the skill folder, so the two can never disagree.
 The scope is chosen once, at install time, in one of two ways:
 
 ```bash
-npx skills add anodeaGr/speaksimple
+npx skills add anodeaGr/speaksimple-skill
 ```
 
 The CLI asks "this project, or all projects" and writes the folder to match.

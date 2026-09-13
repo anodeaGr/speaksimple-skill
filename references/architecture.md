@@ -153,7 +153,7 @@ data, so "where is my style?" has the same answer as "where is the skill?",
 and nothing belonging to this skill exists anywhere else.
 
 Scope is chosen exactly once, at install time, by whichever route put the
-folder there: `npx skills add anodeaGr/speaksimple` asking "this project or
+folder there: `npx skills add anodeaGr/speaksimple-skill` asking "this project or
 all projects", or `--to global` / `--to project` copying an uninstalled source
 folder. An installed skill is never relocated: relocating would silently change
 which projects the style applies to.

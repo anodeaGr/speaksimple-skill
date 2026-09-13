@@ -139,7 +139,7 @@ style applies to. If `--check` reports `installedAs: unmanaged`, the skill is
 not installed anywhere yet: ask the user whether this style is for **this
 project** or **all projects**, then run `install.mjs --to project` or
 `--to global`, and continue from the copy it made. A user who has the `skills`
-CLI can run `npx skills add anodeaGr/speaksimple` instead and answer the same
+CLI can run `npx skills add anodeaGr/speaksimple-skill` instead and answer the same
 question there; either way the folder it lands in is the scope.
 
 **`--check` must print `ready: true`.** If it prints `false`, say what is

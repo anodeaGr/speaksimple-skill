@@ -345,7 +345,7 @@ const FULL = [
   "",
   "To install a new copy, use the skills tool. It asks who the style is for:",
   "",
-  "  npx skills add anodeaGr/speaksimple",
+  "  npx skills add anodeaGr/speaksimple-skill",
   "",
   "Without that tool, Claude runs one of these for you:",
   "",

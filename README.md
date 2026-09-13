@@ -231,7 +231,7 @@ You need Node.js 18 or later, and Claude Code.
 ### Step 1 — add the skill
 
 ```bash
-npx skills add anodeaGr/speaksimple
+npx skills add anodeaGr/speaksimple-skill
 ```
 
 On Windows, add `--copy` if you see a symlink error.

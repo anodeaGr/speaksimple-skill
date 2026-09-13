@@ -27,7 +27,7 @@
  *   <project>/.claude/skills/speaksimple   -> style applies to that project
  *   <project>/.agents/skills/speaksimple   -> style applies to that project
  *
- * The .agents forms are what `npx skills add anodeaGr/speaksimple` writes.
+ * The .agents forms are what `npx skills add anodeaGr/speaksimple-skill` writes.
  *
  * The style file lives INSIDE the skill folder, beside this script. One
  * directory holds the skill and its data, so nothing belonging to this skill
@@ -77,6 +77,11 @@ const lc = (p) => nrm(p).toLowerCase();
  */
 const SKILL_ROOT = resolve(HERE, "..");
 const SKILL_NAME = "speaksimple";
+// The repository slug, which is NOT the skill name. The skill is invoked as
+// /speaksimple; the repository says "skill" in its name so a reader can tell
+// what it holds without opening it. Keeping the two apart means renaming one
+// never silently renames the other.
+const REPO = "anodeaGr/speaksimple-skill";
 const HOME_SKILLS = join(homedir(), ".claude", "skills");
 const GLOBAL_SKILL = join(HOME_SKILLS, SKILL_NAME);
 
@@ -152,7 +157,7 @@ function assertWithinScope(paths) {
         "  " + fwd(GLOBAL_SKILL) + "                 (all projects)\n" +
         "  <project>/.claude/skills/" + SKILL_NAME + "   (that project only)\n" +
         "Install it in one of two ways:\n" +
-        "  npx skills add anodeaGr/" + SKILL_NAME + "   (the skills CLI puts it there)\n" +
+        "  npx skills add " + REPO + "   (the skills CLI puts it there)\n" +
         "  --to global  or  --to project            (copy this folder yourself)\n" +
         "The style file is then created in that folder."
     );
@@ -548,7 +553,7 @@ function gate() {
         "FAIL",
         "skill: " + fwd(SKILL_ROOT),
         "reason: this copy is not installed in a skills directory, so the scope is unknown.",
-        "fix: npx skills add anodeaGr/" + SKILL_NAME,
+        "fix: npx skills add " + REPO,
         "or: node \"" + fwd(join(SKILL_ROOT, "scripts", "install.mjs")) + "\" --to global",
       ].join("\n")
     );
