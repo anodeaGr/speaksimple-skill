@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+# The user's own data. It is created INSIDE this folder at runtime, because
+# the skill's location is its scope. None of it may ever reach the repository:
+# a committed profile hands one person's style to everyone who installs.
+# `install.mjs --to` refuses to copy a source folder that holds a profile, and
+# this file is the second lock on the same door.
+# ---------------------------------------------------------------------------
+UserCommunicationProfile.md
+profiles/
+metalearning_*.md
+DISABLED
+*.speaksimple-backup-*
+
+# Written by the `skills` CLI if it is ever run from this folder
+skills-lock.json
+.claude/
+.agents/
+
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
