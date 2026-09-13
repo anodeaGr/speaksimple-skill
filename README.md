@@ -294,24 +294,6 @@ A profile that produces confident but hollow answers has misapplied all of it.
 
 ---
 
-## Repository contents
-
-| Path | |
-|---|---|
-| `SKILL.md` | the skill — routing, the four layers, the rules that apply in every mode |
-| `instructions/` | one file per mode, plus setup and help. Numbered steps, literal output templates, explicit stop points |
-| `references/frameworks.md` | the ten frameworks, all rendered on one shared example |
-| `references/profile-schema.md` | the profile file shape and the marker contract |
-| `references/architecture.md` | why each piece is shaped this way, including what was measured and rejected |
-| `prompts/interview.md` | the five interview steps and the answer-to-rule mapping |
-| `prompts/calibration-samples.md` | the A–D option sets |
-| `scripts/install.mjs` | installs and removes the hook and the `CLAUDE.md` block |
-| `scripts/speaksimple-context.mjs` | the hook itself — reads the profile, prints the rules, never fails loudly |
-| `scripts/recommend.mjs` | scores all ten frameworks from the interview answers |
-| `scripts/analyze-sessions.mjs` | mines past transcripts for evidence (meta-cognition) |
-| `scripts/help.mjs` | all fixed user-facing text, generated so it is identical every run |
-| `assets/UserCommunicationProfile.template.md` | the starting point for a profile |
-
 No dependencies. Plain Node, no `package.json`, no build step — a style tool that needs
 `npm install` before it can remind Claude to write shorter sentences will not survive contact
 with a new machine.
